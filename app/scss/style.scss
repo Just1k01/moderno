@@ -191,6 +191,7 @@ background-color: $grey;
   &-author{
     display: flex;
     align-items: center;
+    max-width: 245px;
     .avatar{
       height: 30px;
       padding: 30px;
@@ -204,6 +205,12 @@ background-color: $grey;
     span{
       font-size: 14px;
       font-weight: 500;
+    }
+  }
+  &-star{
+    font-size: 12px;
+    span{
+      color: $bg;
     }
   }
 }
@@ -225,3 +232,33 @@ background-color: $grey;
   }
 }
 //end products
+//start slider
+.product-slider{
+  padding: 110px 0px 120px;
+  .slick-dots{
+    margin-top: 50px;
+    text-align: center;
+    li{
+      display: inline-block;
+      margin-left: 3px;
+      margin-right: 3px;
+      &.slick-active{
+        button{
+          background-color: $green;
+        }
+      }
+      button{
+        border-radius: 50%;
+        background-color: rgb(232, 232, 232);
+        border: none;
+        outline: none;
+        font-size: 0px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//end slider
